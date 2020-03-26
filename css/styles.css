@@ -63,8 +63,8 @@ nav.main a:hover {
 .modal {
     color: #fff;
     text-align: center;
-    width: 50%;                                 /*TODO: Replace w/ standard site widths */
-    max-width: 800px;                          
+    width: 60%;                                 /*TODO: Replace w/ standard site widths */
+    max-width: 650px;                          
     padding: 1em;
     position: fixed;
     top: 35%;
@@ -75,7 +75,7 @@ nav.main a:hover {
 }
 
 .modal h3 {
-    font-size: 36pt;
+    font-size: 30pt;
     font-weight: 300;
     margin:0;
     margin-top: 1em;
@@ -87,7 +87,7 @@ nav.main a:hover {
     animation: hrWidth 0.5s 0.5s ease-in-out;
 }
 .modal p {
-    font-size: 15pt;
+    font-size: 13pt;
     padding: 1em 2em;
     padding-top: 0;
     margin-bottom: 1em;
