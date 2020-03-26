@@ -10,19 +10,20 @@ jQuery(document).ready(function () {
         event.stopPropagation();    // Stop clickthrough on modal content
     });
 
-    // Closed by background click
+    // Debug: each of these cases could be individually configured to set/not set the cookie, if preferred
+    // Case 1: closed by background click
     jQuery(".modal-overlay").click(function () {
         setCookie(cookieName, 1);
         jQuery(this).hide();
     });
 
-    // Closed by close button click
+    // Case 2: closed by close-button click
     jQuery(".modal .modal-close").click(function () {
         setCookie(cookieName, 1);
         jQuery("#" + jQuery(this).data("modal-id")).hide();
     });
 
-    // Closed by CTA button press
+    // Case 3: Closed by CTA button press
     jQuery(".modal .modal-action").click(function () {
         jQuery("#" + jQuery(this).data("modal-id")).hide();
 
