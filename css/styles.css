@@ -1,0 +1,162 @@
+/* Placeholder: global styles */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+h2, h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;  /* Pretend this is a responsive container column */
+}
+
+/* Placeholder: global animation classes */
+.slideAway {
+    animation: slideAway 0.2s forwards;
+}
+.fadeOut {
+    animation: fadeOut 2.5s forwards;
+}
+
+/* Placeholder: temp nav */
+nav.main {
+    margin: 2em 0;
+}
+nav.main ul {
+    padding: 0;
+}
+nav.main ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+nav.main a {
+    color: #333;
+    font-weight: bold;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+nav.main a:hover {
+    background: #ccc;
+}
+
+
+/* Modal Styles ---------------------------------------- */
+/* ----------------------------------------------------- */
+
+/* Background */
+
+.modal-overlay {
+    display: none;
+    opacity: 0;
+    background: rgba(0,0,0,0.85);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: fadeIn 0.5s 0.25s forwards;
+}
+
+/* Modal Content */
+
+.modal {
+    color: #fff;
+    text-align: center;
+    width: 50%;                                 /*TODO: Replace w/ standard site widths */
+    max-width: 800px;                          
+    padding: 1em;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    animation: slideUp 0.5s 0.25s forwards;
+    animation-timing-function: ease-out;
+}
+
+.modal h3 {
+    font-size: 36pt;
+    font-weight: 300;
+    margin:0;
+    margin-top: 1em;
+}
+.modal hr {
+    margin: 30px auto;
+    width: 30%;
+    opacity: 1;
+    animation: hrWidth 0.5s 0.5s ease-in-out;
+}
+.modal p {
+    font-size: 15pt;
+    padding: 1em 2em;
+    padding-top: 0;
+    margin-bottom: 1em;
+}
+.modal .modal-action {
+    background: rgb(61, 139, 218);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13pt;
+    padding: 1em 3em;
+    transition: 0.25s;
+}
+.modal .modal-action:hover {
+    background: rgb(23, 96, 168);
+    cursor: pointer;
+}
+.modal .modal-close {
+    font-size:18pt;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.modal .modal-close:hover {
+    color: #aaa;
+    cursor: pointer;
+}
+    
+/* Animations ------------------------------------------ */
+
+@keyframes slideUp {
+    from { transform: translate(-50%, -35%); }
+    to { transform: translate(-50%, -50%); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes hrWidth {
+    from { width: 1%; opacity: 0; }
+    to { width: 30%; opacity: 1;}
+}
+
+/* Unused */
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes slideAway {
+    from { transform: translate(-50%, -50%); }
+    to { transform: translate(-50%, -90%); }
+}
+
+/* Testing */
+
+#testDeleteCookie {
+    background: rgb(209, 8, 8);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 11pt;
+    padding: 1em 2em;
+    width: 300px;
+}
+#testDeleteCookie:hover {
+    background: rgb(121, 7, 7);
+    cursor: pointer;
+}
+.cookieDeleted {
+    background: url('../images/cookieDeleted.png') !important;
+}
