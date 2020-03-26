@@ -76,7 +76,8 @@ nav.main a:hover {
 
 .modal h3 {
     font-size: 30pt;
-    font-weight: 300;
+    /*font-weight: 300; -- Might be the better match for wireframe? */
+    font-weight: 400;
     margin:0;
     margin-top: 1em;
 }
